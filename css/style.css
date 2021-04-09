@@ -1,0 +1,208 @@
+@charset "UTF-8";
+/*Подключение обнуляющего стиля*/
+/*Обнуление*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+/*Подключение шрифтов*/
+/*Задание ширины страницы*/
+/*Задание переменных шрифты*/
+/* --------------------------------Основной стиль------------------------------- */
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100%;
+}
+
+.content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+body {
+  font-family: "Montserrat";
+  background: black;
+  color: white;
+}
+
+/*=================ОБЩИЕ СТИЛИ================*/
+.peach {
+  color: #f66c41;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.linethrough {
+  text-decoration: line-through;
+}
+
+.weight500 {
+  font-weight: 500;
+}
+
+.weight700 {
+  font-weight: 700;
+}
+
+.title {
+  font-size: 70px;
+  line-height: 85px;
+}
+
+/*===================ТОП===================*/
+.header {
+  width: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(63.25%, rgba(0, 0, 0, 0)), to(#000000)), -webkit-gradient(linear, left top, left bottom, from(#000000), color-stop(71.69%, rgba(0, 0, 0, 0))), url("../img/bg.jpg") 0 0/100% no-repeat;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 63.25%, #000000 100%), linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 71.69%), url("../img/bg.jpg") 0 0/100% no-repeat;
+  padding: 105px 73px 861px 73px;
+}
+
+/*================ГЛАВНАЯ================*/
+.main {
+  padding: 128px 0 104px 73px;
+  font-size: 36px;
+  line-height: 43.88px;
+}
+
+.main__subtitle {
+  color: #bcbbbb;
+}
+
+.main__title2 {
+  margin: 90px 0 90px 0;
+  padding: 0 200px 0 0;
+}
+
+.main__list {
+  margin: 20px 0 90px 0;
+}
+
+.main__item {
+  position: relative;
+  margin: 0px 0 0 40px;
+}
+
+.main__item:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 5px;
+  height: 5px;
+  background: white;
+  border-radius: 50%;
+  margin: -2.5px 0 0 -20px;
+}
+
+.main__text2 {
+  margin: 20px 0 90px 0;
+  padding: 0 143px 0 0;
+}
+
+.main__link {
+  border-bottom: 1px solid #f66c41;
+}
